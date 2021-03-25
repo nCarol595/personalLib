@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>My Library</header>
+
+    <div class="maindiv">
+
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+                <th></th>
+            </tr>
+            <tbody id="bookish"></tbody>
+        </table>
+        <div id="case">
+            <div class="popup" id="popup-1">
+                <form action="" id="form" method="GET" name="form">
+                    <button id="close" onclick="div_hide()">x</button>
+                    <h2>Input Book Info</h2>
+
+                    <br/>
+                    <input id="title" name="title" placeholder="Title" type="text">
+                    <input id="author" name="author" placeholder="Author" type="text">
+                    <input id="pages" name="pages" placeholder="No. of Pages" type="text">
+                    <select name="status" id="status">
+						<option value="read">Read</option>
+						<option value="not read">Not read</option>
+					  </select>
+                    <input id="submit" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+
+        <!--Pop Up Button-->
+        <button onclick="togglePopup()" class="addMe">Add New Book</button>
+
+    </div>
+
+    <script src="script.js"></script>
+    <footer>Copyright 2021</footer>
+</body>
+
+
+</html>
